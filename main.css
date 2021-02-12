@@ -1,14 +1,44 @@
+body{
+    display: flex;
+    flex-direction: column;
+    /* overflow: hidden; */
+}
+
+a:link{
+    color: white;
+    text-decoration: none;
+}
+
+a:visited{
+    color: white;
+}
+
+.pagesContainer{
+    /* overflow-y: scroll; */
+}
+
 .page1{
     background-image: url('hand-drawn-spaceship-background_23-2147908136.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    height: 100vh;
+    height: 1050px;
     width: 100vw;
     color: white;
     font-family: sans-serif;
     font-weight: 600;
+
 }
+
+/*
+.headerBar{
+    position: relative;
+    width: 100vw;
+    display:flex;
+    flex-direction: row;
+
+}
+*/
 
 header{
     position: fixed;
@@ -18,7 +48,9 @@ header{
     /*left: 100px;*/
     align-items: center;
     height: 100px;
-    width: 100vw;    
+    width: 80vw;
+    transition: 0.2s; 
+
 }
 
 nav>ul>{
@@ -28,12 +60,12 @@ nav>ul>{
     overflow: hidden;
 }
 
-nav>ul>li{
+li{
     padding: 10px;
-    display: inline;
+    display: inline-block;
     text-align: center;
-
 }
+
 
 .upperRightMenus{
     height: 100px;
@@ -41,9 +73,10 @@ nav>ul>li{
     /* right: 0px; */
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
+    right: 0px;
     align-items: center;
-    width: 100vw;
+    width: 15vw;
 }
 
 .shop{
@@ -59,10 +92,12 @@ nav>ul>li{
 
 .starlink{
     position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: flex-end; */
     /* top: 750px; */
+    top: 650px;
+    width:auto;
     margin-left: 150px;
     height: 100vh;
 }
@@ -85,4 +120,32 @@ button{
     background-color: transparent;
     border: 2px solid white;
     margin-bottom: 200px;
+}
+
+.page2{
+    background-image: url('rocket-polygonal-wireframe-mesh-art-260nw-1077529997.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 1050px;
+    width: 100vw;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 600;
+
+}
+
+.starship{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* top: 750px; */
+    margin-left: 150px;
+    height: 1050px;
+}
+
+p{
+    margin-bottom: 100px;
+    max-width: 700px;
 }
