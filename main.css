@@ -14,10 +14,11 @@ header{
     position: fixed;
     display: flex;
     flex-direction: row;
-    justify-content: center; /*this isn't working so I did left: 100px*/
-    left: 100px;
+    justify-content: center; 
+    /*left: 100px;*/
     align-items: center;
-    height: 100px;    
+    height: 100px;
+    width: 100vw;    
 }
 
 nav>ul>{
@@ -37,11 +38,12 @@ nav>ul>li{
 .upperRightMenus{
     height: 100px;
     position: fixed;
-    right: 0px;
+    /* right: 0px; */
     display: flex;
     flex-direction: row;
-    justify-content: flex-end; /*this isn't working so I did right: 0px;*/
+    justify-content: flex-end;
     align-items: center;
+    width: 100vw;
 }
 
 .shop{
@@ -57,7 +59,7 @@ nav>ul>li{
 
 .starlink{
     position: relative;
-    top: 65%;
+    top: 750px;
     margin-left: 150px;
 }
 
