@@ -59,8 +59,12 @@ nav>ul>li{
 
 .starlink{
     position: relative;
-    top: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* top: 750px; */
     margin-left: 150px;
+    height: 100vh;
 }
 
 h1{
@@ -80,4 +84,5 @@ button{
     color: white;
     background-color: transparent;
     border: 2px solid white;
+    margin-bottom: 200px;
 }
